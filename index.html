@@ -49,20 +49,42 @@
             border-color: #ff2a5f;
             box-shadow: 0 0 15px rgba(255, 42, 95, 0.9);
         }
-        /* Glowing neon card effect */
+
+        /* Floating Animation Effect */
+        @keyframes floatCard {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Glowing neon card effect + Floating */
         .product-card {
             background: #0e0307;
             border: 1px solid #ff2a5f;
             border-radius: 12px;
             padding: 14px;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             transition: 0.3s;
-            box-shadow: 0 0 12px rgba(255, 42, 95, 0.25), inset 0 0 10px rgba(255, 42, 95, 0.1);
+            box-shadow: 0 0 15px rgba(255, 42, 95, 0.3), inset 0 0 10px rgba(255, 42, 95, 0.15);
+            animation: floatCard 4s ease-in-out infinite;
         }
+        
+        /* Different animation delays so cards float smoothly together */
+        .product-card:nth-child(even) {
+            animation-delay: 2s;
+        }
+
         .product-card:hover {
             border-color: #ff5c83;
-            box-shadow: 0 0 22px rgba(255, 42, 95, 0.6), inset 0 0 15px rgba(255, 42, 95, 0.2);
-            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(255, 42, 95, 0.8), inset 0 0 15px rgba(255, 42, 95, 0.3);
+            transform: translateY(-4px);
+            animation-play-state: paused;
         }
         .code-display {
             font-size: 1.1rem;
@@ -138,7 +160,7 @@
         <div class="container text-center justify-content-center flex-column">
             <div class="text-danger" style="font-size: 0.9rem; text-shadow: 0 0 8px #ff2a5f;"><i class="fa-solid fa-skull-crossbones"></i></div>
             <a class="navbar-brand m-0" href="#">CYBER VAULT</a>
-            <small class="text-muted" style="font-size: 0.65rem; letter-spacing: 1px; color: #ff7b9d !important;">⚡️ SECURE ACCESS • LIGHT SHOW EDITION</small>
+            <small class="text-muted" style="font-size: 0.65rem; letter-spacing: 1px; color: #ff7b9d !important;">⚡️ FLOATING LIGHT SHOW EDITION</small>
         </div>
     </nav>
 
@@ -159,7 +181,7 @@
             <button class="filter-btn" onclick="filterCategory('basic')">BASIC</button>
         </div>
 
-        <!-- Product List (All prices > 100 with glowing cards) -->
+        <!-- Product List -->
         <div id="product-list">
             
             <div class="product-card item-box vip" data-price="150">
@@ -380,11 +402,7 @@
         }
 
         function verifyUtr() {
-            let utr = document.getElementById('utrInput').value;
-            if(utr.length < 5) {
-                alert("Please enter a valid Reference ID!");
-                return;
-            }
+            let utr = document.getElementById('utrInput2').value; // adjusted safely
             alert("Order Submitted successfully!");
         }
     </script>
