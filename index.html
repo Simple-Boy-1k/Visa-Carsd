@@ -402,7 +402,11 @@
         }
 
         function verifyUtr() {
-            let utr = document.getElementById('utrInput2').value; // adjusted safely
+            let utr = document.getElementById('utrInput').value;
+            if(utr.length < 5) {
+                alert("Please enter a valid Reference ID!");
+                return;
+            }
             alert("Order Submitted successfully!");
         }
     </script>
