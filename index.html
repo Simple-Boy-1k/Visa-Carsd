@@ -21,7 +21,7 @@
             letter-spacing: 2px;
             color: #ff2a5f !important;
             font-size: 1.4rem;
-            text-shadow: 0 0 20px rgba(255, 42, 95, 1), 0 0 30px rgba(255, 42, 95, 0.8);
+            text-shadow: 0 0 8px rgba(255, 42, 95, 0.6);
         }
         .filter-container {
             overflow-x: auto;
@@ -41,34 +41,34 @@
             font-weight: 600;
             font-size: 0.75rem;
             transition: 0.3s;
-            box-shadow: 0 0 10px rgba(255, 42, 95, 0.4);
+            box-shadow: 0 0 4px rgba(255, 42, 95, 0.2);
         }
         .filter-btn:hover, .filter-btn.active {
             background: #ff2a5f;
             color: #fff;
             border-color: #ff5c83;
-            box-shadow: 0 0 20px rgba(255, 42, 95, 1), 0 0 30px rgba(255, 42, 95, 0.6);
+            box-shadow: 0 0 10px rgba(255, 42, 95, 0.6);
         }
 
-        /* Floating & Neon Light Show Animation */
+        /* Floating & Soft Neon Light Animation */
         @keyframes floatCard {
             0% {
                 transform: translateY(0px);
-                box-shadow: 0 0 15px rgba(255, 42, 95, 0.4), inset 0 0 10px rgba(255, 42, 95, 0.2);
+                box-shadow: 0 0 8px rgba(255, 42, 95, 0.2), inset 0 0 5px rgba(255, 42, 95, 0.1);
             }
             50% {
-                transform: translateY(-8px);
-                box-shadow: 0 0 30px rgba(255, 42, 95, 0.8), inset 0 0 20px rgba(255, 42, 95, 0.4);
+                transform: translateY(-5px);
+                box-shadow: 0 0 15px rgba(255, 42, 95, 0.4), inset 0 0 10px rgba(255, 42, 95, 0.2);
             }
             100% {
                 transform: translateY(0px);
-                box-shadow: 0 0 15px rgba(255, 42, 95, 0.4), inset 0 0 10px rgba(255, 42, 95, 0.2);
+                box-shadow: 0 0 8px rgba(255, 42, 95, 0.2), inset 0 0 5px rgba(255, 42, 95, 0.1);
             }
         }
 
         .product-card {
             background: #0e0307;
-            border: 1.5px solid #ff2a5f;
+            border: 1px solid rgba(255, 42, 95, 0.6);
             border-radius: 12px;
             padding: 14px;
             margin-bottom: 14px;
@@ -81,20 +81,20 @@
         }
 
         .product-card:hover {
-            border-color: #ffffff;
-            box-shadow: 0 0 35px rgba(255, 42, 95, 1), inset 0 0 20px rgba(255, 42, 95, 0.6);
-            transform: translateY(-5px);
+            border-color: #ff2a5f;
+            box-shadow: 0 0 18px rgba(255, 42, 95, 0.5), inset 0 0 10px rgba(255, 42, 95, 0.3);
+            transform: translateY(-3px);
             animation-play-state: paused;
         }
 
         /* High Light Sub Box Styling */
         .sub-box {
             background: #1a060e;
-            border: 1px solid #ff2a5f;
+            border: 1px solid rgba(255, 42, 95, 0.4);
             border-radius: 8px;
             padding: 8px 12px;
             margin-bottom: 8px;
-            box-shadow: 0 0 8px rgba(255, 42, 95, 0.3), inset 0 0 8px rgba(255, 42, 95, 0.2);
+            box-shadow: 0 0 4px rgba(255, 42, 95, 0.15), inset 0 0 4px rgba(255, 42, 95, 0.1);
         }
 
         .code-display {
@@ -103,13 +103,13 @@
             letter-spacing: 2px;
             color: #ffffff;
             font-family: monospace;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 42, 95, 0.6);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 42, 95, 0.3);
         }
         .price-tag {
             color: #ff2a5f;
             font-weight: 900;
             font-size: 1.2rem;
-            text-shadow: 0 0 12px rgba(255, 42, 95, 1);
+            text-shadow: 0 0 6px rgba(255, 42, 95, 0.5);
         }
         .btn-buy {
             background: linear-gradient(45deg, #cc0033, #ff2a5f);
@@ -122,19 +122,19 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 0.85rem;
-            box-shadow: 0 0 15px rgba(255, 42, 95, 0.8);
+            box-shadow: 0 0 8px rgba(255, 42, 95, 0.4);
             transition: 0.3s;
         }
         .btn-buy:hover {
             background: linear-gradient(45deg, #ff2a5f, #ff7b9d);
-            box-shadow: 0 0 30px rgba(255, 42, 95, 1), 0 0 15px #fff;
+            box-shadow: 0 0 15px rgba(255, 42, 95, 0.7);
             color: #fff;
         }
         .modal-content {
             background: #0f0307;
             color: #fff;
-            border: 1.5px solid #ff2a5f;
-            box-shadow: 0 0 40px rgba(255, 42, 95, 0.8);
+            border: 1px solid rgba(255, 42, 95, 0.8);
+            box-shadow: 0 0 20px rgba(255, 42, 95, 0.4);
             border-radius: 14px;
         }
         .qr-box {
@@ -143,36 +143,35 @@
             border-radius: 8px;
             display: inline-block;
             margin: 8px 0;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
         }
         .upi-box {
             background: #17050b;
-            border: 1px solid #ff2a5f;
+            border: 1px solid rgba(255, 42, 95, 0.4);
             padding: 8px 12px;
             border-radius: 8px;
             font-size: 0.85rem;
-            box-shadow: 0 0 10px rgba(255, 42, 95, 0.4);
+            box-shadow: 0 0 5px rgba(255, 42, 95, 0.2);
         }
         .limit-bright {
             color: #ff5c83 !important;
             font-weight: 800;
-            text-shadow: 0 0 10px rgba(255, 92, 131, 0.9);
+            text-shadow: 0 0 5px rgba(255, 92, 131, 0.4);
         }
         .label-bright {
             color: #ffb3c6 !important;
             font-weight: 600;
-            text-shadow: 0 0 5px rgba(255, 179, 198, 0.5);
         }
     </style>
 </head>
 <body>
 
     <!-- Top Navbar -->
-    <nav class="navbar navbar-dark px-2 mb-2" style="background-color: #080204; border-bottom: 2px solid #ff2a5f; box-shadow: 0 0 20px rgba(255,42,95,0.6);">
+    <nav class="navbar navbar-dark px-2 mb-2" style="background-color: #080204; border-bottom: 1.5px solid rgba(255,42,95,0.5); box-shadow: 0 0 10px rgba(255,42,95,0.3);">
         <div class="container text-center justify-content-center flex-column">
-            <div class="text-danger" style="font-size: 1.1rem; text-shadow: 0 0 12px #ff2a5f;"><i class="fa-solid fa-skull-crossbones"></i></div>
+            <div class="text-danger" style="font-size: 1.1rem; text-shadow: 0 0 6px #ff2a5f;"><i class="fa-solid fa-skull-crossbones"></i></div>
             <a class="navbar-brand m-0" href="#">CARD VAULT</a>
-            <small class="text-muted" style="font-size: 0.65rem; letter-spacing: 1px; color: #ff7b9d !important; text-shadow: 0 0 6px #ff2a5f;">// PAY FIRST → ENTER UTR → GET CARD</small>
+            <small class="text-muted" style="font-size: 0.65rem; letter-spacing: 1px; color: #ff7b9d !important;">// PAY FIRST → ENTER UTR → GET CARD</small>
         </div>
     </nav>
 
@@ -194,13 +193,13 @@
             <button class="filter-btn" onclick="filterCategory('rupay')">RUPAY</button>
         </div>
 
-        <!-- Product List (Extended from ₹99 to ₹2000) -->
+        <!-- Product List -->
         <div id="product-list">
             
             <!-- Item 1: VISA ₹99 -->
             <div class="product-card item-box visa" data-price="99">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">VISA</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">VISA</span>
                     <span class="price-tag">₹99</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -220,14 +219,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">ARJUN YADAV</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">ARJUN YADAV</div>
                 <button class="btn btn-buy" onclick="openPayModal('4111 8392 0192 XXXX', '₹99')">💳 BUY • ₹99</button>
             </div>
 
             <!-- Item 2: MC ₹149 -->
             <div class="product-card item-box mc" data-price="149">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">MC</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">MC</span>
                     <span class="price-tag">₹149</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -247,14 +246,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">VIKRAM SINGH</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">VIKRAM SINGH</div>
                 <button class="btn btn-buy" onclick="openPayModal('5368 7965 1152 XXXX', '₹149')">💳 BUY • ₹149</button>
             </div>
 
             <!-- Item 3: AMEX ₹250 -->
             <div class="product-card item-box amex" data-price="250">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">AMEX</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">AMEX</span>
                     <span class="price-tag">₹250</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -274,14 +273,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">ROHIT KUMAR</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">ROHIT KUMAR</div>
                 <button class="btn btn-buy" onclick="openPayModal('3742 5510 8810 XXXX', '₹250')">💳 BUY • ₹250</button>
             </div>
 
             <!-- Item 4: DISC ₹399 -->
             <div class="product-card item-box disc" data-price="399">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">DISC</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">DISC</span>
                     <span class="price-tag">₹399</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -301,14 +300,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">MANISH GUPTA</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">MANISH GUPTA</div>
                 <button class="btn btn-buy" onclick="openPayModal('6011 5531 3569 XXXX', '₹399')">💳 BUY • ₹399</button>
             </div>
 
             <!-- Item 5: RUPAY ₹499 -->
             <div class="product-card item-box rupay" data-price="499">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">RUPAY</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">RUPAY</span>
                     <span class="price-tag">₹499</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -328,14 +327,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">AMIT VERMA</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">AMIT VERMA</div>
                 <button class="btn btn-buy" onclick="openPayModal('6081 9911 5340 XXXX', '₹499')">💳 BUY • ₹499</button>
             </div>
 
             <!-- Item 6: VISA ₹699 -->
             <div class="product-card item-box visa" data-price="699">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">VISA</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">VISA</span>
                     <span class="price-tag">₹699</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -355,14 +354,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">SUNIL SHARMA</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">SUNIL SHARMA</div>
                 <button class="btn btn-buy" onclick="openPayModal('4916 2230 4412 XXXX', '₹699')">💳 BUY • ₹699</button>
             </div>
 
             <!-- Item 7: MC ₹899 -->
             <div class="product-card item-box mc" data-price="899">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">MC</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">MC</span>
                     <span class="price-tag">₹899</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -382,14 +381,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">RAHUL PATEL</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">RAHUL PATEL</div>
                 <button class="btn btn-buy" onclick="openPayModal('5241 4420 8812 XXXX', '₹899')">💳 BUY • ₹899</button>
             </div>
 
             <!-- Item 8: AMEX ₹1199 -->
             <div class="product-card item-box amex" data-price="1199">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">AMEX</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">AMEX</span>
                     <span class="price-tag">₹1199</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -409,14 +408,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">DEEPAK VERMA</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">DEEPAK VERMA</div>
                 <button class="btn btn-buy" onclick="openPayModal('3714 8810 5510 XXXX', '₹1199')">💳 BUY • ₹1199</button>
             </div>
 
             <!-- Item 9: RUPAY ₹1499 -->
             <div class="product-card item-box rupay" data-price="1499">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">RUPAY</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">RUPAY</span>
                     <span class="price-tag">₹1499</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -436,14 +435,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">ANAND JOSHI</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">ANAND JOSHI</div>
                 <button class="btn btn-buy" onclick="openPayModal('6501 5340 9911 XXXX', '₹1499')">💳 BUY • ₹1499</button>
             </div>
 
             <!-- Item 10: VISA ₹1799 -->
             <div class="product-card item-box visa" data-price="1799">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">VISA</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">VISA</span>
                     <span class="price-tag">₹1799</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -463,14 +462,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">TARUN MISHRA</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">TARUN MISHRA</div>
                 <button class="btn btn-buy" onclick="openPayModal('4512 0090 6621 XXXX', '₹1799')">💳 BUY • ₹1799</button>
             </div>
 
             <!-- Item 11: MC ₹2000 -->
             <div class="product-card item-box mc" data-price="2000">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="text-danger fw-bold" style="font-size: 0.95rem; text-shadow: 0 0 10px #ff2a5f;">MC</span>
+                    <span class="text-danger fw-bold" style="font-size: 0.95rem;">MC</span>
                     <span class="price-tag">₹2000</span>
                 </div>
                 <div class="sub-box text-center my-2">
@@ -490,7 +489,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem; text-shadow: 0 0 5px rgba(255,255,255,0.4);">SANJAY SINGH</div>
+                <div class="text-white fw-semibold mb-2 px-1" style="font-size: 0.75rem;">SANJAY SINGH</div>
                 <button class="btn btn-buy" onclick="openPayModal('5521 8812 3340 XXXX', '₹2000')">💳 BUY • ₹2000</button>
             </div>
 
@@ -503,7 +502,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content p-3">
                 <div class="modal-header border-0 pb-0">
-                    <h6 class="modal-title text-warning fw-bold w-100 text-center" style="text-shadow: 0 0 10px #ff2a5f;">
+                    <h6 class="modal-title text-warning fw-bold w-100 text-center">
                         <i class="fa-solid fa-qrcode me-1"></i> CHECKOUT
                     </h6>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -511,23 +510,23 @@
                 <div class="modal-body text-center pt-2">
                     
                     <div class="upi-box d-flex justify-content-between align-items-center mb-2">
-                        <span>UPI: <strong class="text-warning" style="text-shadow: 0 0 6px #ff2a5f;">shambhakhatun@fam</strong></span>
+                        <span>UPI: <strong class="text-warning">shambhakhatun@fam</strong></span>
                         <button class="btn btn-sm btn-dark text-danger border-0 shadow-none" onclick="copyUpi()"><i class="fa-regular fa-copy"></i></button>
                     </div>
 
-                    <h3 id="modalPrice" class="text-white fw-bold mb-2" style="text-shadow: 0 0 15px #ff2a5f;">₹0</h3>
+                    <h3 id="modalPrice" class="text-white fw-bold mb-2">₹0</h3>
 
                     <!-- QR Code Box -->
                     <div class="qr-box">
                         <img id="qrImage" src="https://files.catbox.moe/t6yyz8.jpg" alt="QR Code" width="140" height="140">
                     </div>
 
-                    <!-- UTR Input Box placed right below QR Code -->
+                    <!-- UTR Input Box -->
                     <div class="mb-3 mt-2">
-                        <input type="text" id="utrInput" class="form-control bg-dark text-white border-secondary text-center" placeholder="Enter UTR / Reference Number" style="font-size: 0.85rem; box-shadow: 0 0 10px rgba(255,42,95,0.4);">
+                        <input type="text" id="utrInput" class="form-control bg-dark text-white border-secondary text-center" placeholder="Enter UTR / Reference Number" style="font-size: 0.85rem;">
                     </div>
 
-                    <div class="text-danger small mb-3" style="text-shadow: 0 0 8px #ff2a5f;">
+                    <div class="text-danger small mb-3">
                         <i class="fa-solid fa-hourglass-half"></i> <span id="timer">04:59</span>
                     </div>
 
